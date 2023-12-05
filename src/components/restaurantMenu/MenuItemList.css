@@ -1,39 +1,39 @@
-.menuItem{
+.menuItem {
     display: flex;
     margin-top: 10px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgb(233, 228, 228);
 }
 
-.food-image{
+.food-image {
     border-radius: 5px;
     width: 130px;
     height: 90px;
 }
 
-.food-details-container{
+.food-details-container {
     display: flex;
     flex-direction: column;
     gap: 15px;
     width: 85%;
 }
 
-.food-details{
+.food-details {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.food-description{
+.food-description {
     width: 90%;
 }
 
-.food-image-container{
+.food-image-container {
     width: 15%;
     position: relative;
 }
 
-.add-remove-btn{
+.add-remove-btn {
     cursor: pointer;
     position: absolute;
     width: 70px;
@@ -43,26 +43,27 @@
     background-color: white;
     margin-top: 62px;
     margin-left: 28px;
-    transition: all ease 0.2s ;
+    transition: all ease 0.2s;
 }
 
-.add-remove-btn:hover{
+.add-remove-btn:hover {
     box-shadow: 1px 1px 10px rgb(208, 204, 204);
 }
 
 
 @media screen and (max-width:1000px) {
-    .food-image{
+    .food-image {
         border-radius: 5px;
         width: 100px;
         height: 60px;
     }
-    .add-remove-btn{
+
+    .add-remove-btn {
         position: absolute;
         width: 60px;
         margin-top: 32px;
         margin-left: 20px;
-        transition: all ease 0.2s ;
+        transition: all ease 0.2s;
     }
-    
+
 }

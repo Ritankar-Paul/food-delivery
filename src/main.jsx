@@ -10,40 +10,33 @@ import { Provider } from 'react-redux'
 import appStore from './utils/redux/appStore'
 
 
-const AppLayout = ()=>(
+const AppLayout = () => (
   <Provider store={appStore}>
-  <Header />
-  <Outlet />
+    <Header />
+    <Outlet />
   </Provider>
 );
 
 const appRouter = createBrowserRouter([
   {
-  path: "/",
-  element: <AppLayout />,
-  children: [
-              {
-                path: "/",
-                element: <Body />,              
-              },
-              {
-                path: "/restaurant/:resId",
-                element: <RestaurantMenu />
-              },
-              {
-                path: "/cart",
-                element: <Cart />
-              }
-            ]
+    path: "/",
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
+      {
+        path: "/restaurant/:resId",
+        element: <RestaurantMenu />
+      },
+      {
+        path: "/cart",
+        element: <Cart />
+      }
+    ]
   }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(<RouterProvider router={appRouter} />)
 
-
-
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-// )

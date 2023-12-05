@@ -1,34 +1,35 @@
-.restaurant-Logo{
+.restaurant-Logo {
     width: 254px;
     height: 170px;
     object-fit: cover;
     border-radius: 16px;
 }
 
-.restaurantCard-container{
+.restaurantCard-container {
     padding: 3px;
 }
-.restaurantCard-container:hover{
+
+.restaurantCard-container:hover {
     border-radius: 16px;
     box-shadow: 0px 0px 25px rgb(177, 172, 172);
 }
 
-.restaurantCard-name{
+.restaurantCard-name {
     width: 254px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.restaurantCard-cuisines{
+.restaurantCard-cuisines {
     width: 240px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    
+
 }
 
-.restaurantCard-container > p{
+.restaurantCard-container>p {
     margin-top: 5px;
     color: gray;
 }

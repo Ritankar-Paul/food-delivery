@@ -1,10 +1,10 @@
 import "./Shimmer.css"
-const Shimmer =()=>{
+const Shimmer = () => {
     return (
         <div>
-            
-            {Array(8).fill("").map((e, index)=><div key={index} className="shimmer"></div>)}
-            
+
+            {Array(8).fill("").map((e, index) => <div key={index} className="shimmer"></div>)}
+
         </div>
     )
 };

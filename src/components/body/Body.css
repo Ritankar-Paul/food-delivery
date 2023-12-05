@@ -1,41 +1,42 @@
-.search-container{
- margin-top: 20px;
- display: flex;
- gap: 50px;
+.search-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.search-input-container{
+.search-input-container {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
 }
 
-.clear-btn{
+.clear-btn {
     margin-left: -20px;
     margin-right: 11px;
     border: none;
     background: none;
-    
+
 }
 
-.search-input{
+.search-input {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid rgb(180, 178, 178);
     color: black;
     font-weight: 500;
-    transition: all ease 0.2s ;
+    transition: all ease 0.2s;
 }
-.search-input:focus{
+
+.search-input:focus {
     outline: 1px solid rgb(185, 185, 181);
 }
 
-.search-btn{
+.search-btn {
     margin-top: 10px;
     padding: 10px;
     font-weight: bolder;
@@ -43,46 +44,50 @@ a{
     border-radius: 10px;
     background-color: rgba(251, 251, 28, 0.748);
     border: none;
-    transition: all ease 0.2s ;
+    transition: all ease 0.2s;
 }
-.search-btn:hover{
+
+.search-btn:hover {
     cursor: pointer;
     background-color: yellow;
 }
-.search-btn:active{
+
+.search-btn:active {
     scale: 0.97;
 }
 
-.filter-container{
+.filter-container {
     display: flex;
     align-items: center;
     margin-top: -40px;
 }
 
-.restaurant-option{
+.restaurant-option {
     font-weight: bold;
     padding: 10px;
     margin-left: 10px;
     border-radius: 16px;
     background-color: white;
     border: 1px solid rgb(180, 178, 178);
-    transition: all ease 0.2s ;
+    transition: all ease 0.2s;
 }
-.restaurant-option:hover{
+
+.restaurant-option:hover {
     cursor: pointer;
     background-color: rgb(240, 233, 233);
 }
-.restaurant-option:active{
+
+.restaurant-option:active {
     scale: 0.97;
 }
 
-.restaurantList-container{
+.restaurantList-container {
     margin-block: 30px;
     display: flex;
     justify-content: center;
 }
 
-.restaurantList-container > div{
+.restaurantList-container>div {
     max-width: 1144px;
     display: flex;
     flex-wrap: wrap;
@@ -90,40 +95,46 @@ a{
 }
 
 @media screen and (max-width:850px) {
-    .search-container{
+    .search-container {
         flex-direction: column;
-        align-items: flex-start;        
+        align-items: flex-start;
     }
-    .filter-container{
+
+    .filter-container {
         margin-left: 20px;
     }
-    .restaurantList-container{
+
+    .restaurantList-container {
         margin-block: 10px;
     }
-    .restaurantList-container > div{
+
+    .restaurantList-container>div {
         justify-content: center;
     }
 }
 
 @media screen and (max-width:1000px) {
-    .restaurantList-container > div{
+    .restaurantList-container>div {
         justify-content: center;
     }
 
 }
 
 @media screen and (max-width:480px) {
-    .search-container{
+    .search-container {
         flex-direction: column;
-        align-items: flex-start;   
+        align-items: flex-start;
     }
-    .filter-container{
+
+    .filter-container {
         margin-left: 20px;
     }
-    .restaurantList-container{
+
+    .restaurantList-container {
         margin-block: 10px;
     }
-    .restaurantList-container > div{
+
+    .restaurantList-container>div {
         justify-content: center;
     }
 }
