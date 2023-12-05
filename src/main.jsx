@@ -2,13 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import Header from './components/header/Header'
+import Error from './components/header/Error'
 import Body from './components/body/Body'
 import Cart from './components/body/Cart'
 import RestaurantMenu from './components/restaurantMenu/restaurantMenu'
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import appStore from './utils/redux/appStore'
-
 
 const AppLayout = () => (
   <Provider store={appStore}>
@@ -21,6 +21,7 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
