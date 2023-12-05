@@ -1,0 +1,36 @@
+.restaurantMenuCategory-container{
+    
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 20px solid rgb(241, 235, 235);
+    
+}
+.restaurantMenuCategory-title{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: large;
+    
+}
+.restaurantMenuCategory-title-name{
+    font-weight: bolder;
+    text-shadow: 1px 0 black;
+    letter-spacing: 1px;
+}
+
+
+@media screen and (max-width:1000px) {
+    .restaurantMenuCategory-container{
+    
+        margin-bottom: 10px;
+        border-bottom: 10px solid rgb(241, 235, 235);
+        
+    }
+    .restaurantMenuCategory-title{
+        margin-bottom: 10px;
+        font-size: medium;
+        
+    }
+}

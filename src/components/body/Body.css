@@ -1,0 +1,129 @@
+.search-container{
+ margin-top: 20px;
+ display: flex;
+ gap: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.search-input-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.clear-btn{
+    margin-left: -20px;
+    margin-right: 11px;
+    border: none;
+    background: none;
+    
+}
+
+.search-input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(180, 178, 178);
+    color: black;
+    font-weight: 500;
+    transition: all ease 0.2s ;
+}
+.search-input:focus{
+    outline: 1px solid rgb(185, 185, 181);
+}
+
+.search-btn{
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: bolder;
+    color: crimson;
+    border-radius: 10px;
+    background-color: rgba(251, 251, 28, 0.748);
+    border: none;
+    transition: all ease 0.2s ;
+}
+.search-btn:hover{
+    cursor: pointer;
+    background-color: yellow;
+}
+.search-btn:active{
+    scale: 0.97;
+}
+
+.filter-container{
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.restaurant-option{
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 16px;
+    background-color: white;
+    border: 1px solid rgb(180, 178, 178);
+    transition: all ease 0.2s ;
+}
+.restaurant-option:hover{
+    cursor: pointer;
+    background-color: rgb(240, 233, 233);
+}
+.restaurant-option:active{
+    scale: 0.97;
+}
+
+.restaurantList-container{
+    margin-block: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.restaurantList-container > div{
+    max-width: 1144px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+@media screen and (max-width:850px) {
+    .search-container{
+        flex-direction: column;
+        align-items: flex-start;        
+    }
+    .filter-container{
+        margin-left: 20px;
+    }
+    .restaurantList-container{
+        margin-block: 10px;
+    }
+    .restaurantList-container > div{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .restaurantList-container > div{
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .search-container{
+        flex-direction: column;
+        align-items: flex-start;   
+    }
+    .filter-container{
+        margin-left: 20px;
+    }
+    .restaurantList-container{
+        margin-block: 10px;
+    }
+    .restaurantList-container > div{
+        justify-content: center;
+    }
+}
