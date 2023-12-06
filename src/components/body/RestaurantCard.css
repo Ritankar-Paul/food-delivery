@@ -7,6 +7,7 @@
 
 .restaurantCard-container {
     padding: 3px;
+    transition: all ease 0.15s;
 }
 
 .restaurantCard-container:hover {

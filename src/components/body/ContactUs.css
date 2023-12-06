@@ -1,0 +1,32 @@
+.contact-us {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 80px;
+}
+
+.contact-us-titleOne {
+    font-size: x-large;
+    letter-spacing: 4px;
+}
+
+.contact-us-titleOne>span {
+
+    text-shadow: 1px 0 black;
+}
+
+.contact-us-titleTwo {
+    font-size: xx-large;
+    color: orange;
+    letter-spacing: 2px;
+}
+
+.contact-us>h4 {
+    letter-spacing: 1px;
+}
+
+.contact-us>p {
+    letter-spacing: 1px;
+    width: 600px;
+}

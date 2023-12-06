@@ -1,0 +1,30 @@
+.AboutUs-container {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AboutUs-title {
+    margin-bottom: 30px;
+    font-size: xx-large;
+    color: orange;
+    letter-spacing: 1px;
+}
+
+.AboutUs-description {
+    max-width: 900px;
+    color: rgb(98, 95, 95);
+
+}
+
+.AboutUs-description::first-letter {
+    font-size: x-large;
+}
+
+.AboutUs-logo {
+    width: 30%;
+    margin-left: -40px;
+    margin-top: 30px;
+}

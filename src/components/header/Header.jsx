@@ -15,8 +15,8 @@ const Header = () => {
             <div>
                 <ul className="list-container">
                     <Link to="/" className="list-item"> <li>Home</li></Link>
-                    <li className="list-item">About Us</li>
-                    <li className="list-item">Contact Us</li>
+                    <Link to="/about"> <li className="list-item">About Us</li></Link>
+                    <Link to="/Contact"><li className="list-item">Contact Us</li></Link>
                     <Link to="./cart"> <li className="list-item cart-btn">Cart{cartItems.length == 0 ? null : -cartItems.length}</li></Link>
                 </ul>
             </div>
